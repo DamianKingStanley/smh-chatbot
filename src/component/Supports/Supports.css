@@ -1,0 +1,44 @@
+.SupportsSection {
+    padding: 10px 50px;
+    background-color: #f6fafd;
+    background-image: url(../../assest//robo.png);
+}
+
+.SupportsSection h1 {
+    text-align: center;
+}
+
+.SupportsBody {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+.support {
+    padding: 10px;
+    width: fit-content;
+    border-radius: 15px;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 15px;
+    max-width: fit-content;
+    font-size: 16px;
+    color: white;
+}
+
+@media screen and (max-width: 980px) {
+    .SupportsSection {
+        padding: 10px 10px;
+    }
+    .SupportsBody {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+    .support {
+        padding: 20px;
+        width: auto;
+    }
+}

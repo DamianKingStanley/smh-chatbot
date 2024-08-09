@@ -1,0 +1,101 @@
+.AssistantBotBody {
+    padding: 0px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.AssistantHeader {
+    text-align: center;
+    padding: 10px;
+    background-color: #0056b3;
+    color: white;
+}
+
+#AssistantForm {
+    display: flex;
+    padding: 10px;
+    border-top: 1px solid #ddd;
+}
+
+#AssistantForm input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+#AssistantForm button {
+    padding: 10px 15px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#AssistantForm button:hover {
+    background-color: #0056b3;
+}
+
+.Assistant-chat {
+    padding: 30px 10px;
+}
+
+.userinput {
+    background-color: #007bff;
+    color: white;
+    border-radius: 15px;
+    padding: 10px;
+    font-size: 18px;
+}
+
+.assistantanswer {
+    background-color: #e9ecef;
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 18px;
+}
+
+.loader {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 8px solid rgba(0, 0, 0, 0.1);
+    /* Light grey background */
+    border-radius: 50%;
+    border-top: 8px solid #007bff;
+    /* Blue color for spinner */
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+    z-index: 5;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@media screen and (max-width: 980px) {
+    .Assistant-chat {
+        padding: 10px 10px;
+    }
+    .userinput {
+        font-size: 15px;
+    }
+    .assistantanswer {
+        font-size: 15px;
+    }
+}

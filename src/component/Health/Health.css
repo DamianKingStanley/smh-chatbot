@@ -1,0 +1,62 @@
+.HealthComponent {
+    background-color: #4c75ee;
+    padding: 30px 40px;
+    color: white;
+    margin-top: 30px;
+}
+
+.health {
+    display: flex;
+    flex-wrap: nowrap;
+    position: relative;
+}
+
+.healthimg,
+.healthw {
+    flex: 1;
+    min-width: 300px;
+}
+
+.healthw {
+    padding: 30px;
+    position: relative;
+    z-index: 2;
+}
+
+.healthw p {
+    font-size: 30px;
+    font-style: italic;
+}
+
+.healthimg {
+    position: relative;
+    z-index: 1;
+}
+
+.healthimg img {
+    max-width: 120%;
+    height: auto;
+}
+
+@media screen and (max-width: 980px) {
+    .HealthComponent {
+        background-color: #4c75ee;
+        padding: 30px 10px;
+        color: white;
+        margin-top: 30px;
+    }
+    .health {
+        display: flex;
+        flex-wrap: nowrap;
+        position: relative;
+        flex-direction: column;
+    }
+    .healthw p {
+        font-size: 20px;
+        font-style: italic;
+    }
+    .healthimg img {
+        max-width: 100%;
+        height: auto;
+    }
+}

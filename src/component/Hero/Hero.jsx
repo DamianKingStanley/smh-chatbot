@@ -19,7 +19,7 @@ const Hero = () => {
     const isLoggedIn = sessionStorage.getItem("studentData");
 
     if (isLoggedIn) {
-      window.location.href = "/chatbot";
+      window.location.href = "/mental-health-bot";
     } else {
       window.location.href = "/login";
     }
@@ -29,7 +29,7 @@ const Hero = () => {
     const isLoggedIn = sessionStorage.getItem("studentData");
 
     if (isLoggedIn) {
-      window.location.href = "/self-assessment";
+      window.location.href = "/assistant-bot";
     } else {
       window.location.href = "/login";
     }
